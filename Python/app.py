@@ -5,7 +5,7 @@ import openai
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("YOUR_OPEN_AI_API_KEY")
 
 @app.route('/chat', methods=['POST'])
 def chat():
